@@ -1,0 +1,2 @@
+# Bonezegei_LCD1602_I2C
+HD44780 LCD connected to PCF8574 I2C
