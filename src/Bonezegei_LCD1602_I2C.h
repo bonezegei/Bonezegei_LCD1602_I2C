@@ -10,6 +10,9 @@
 class Bonezegei_LCD1602_I2C {
 public:
   Bonezegei_LCD1602_I2C();
+  Bonezegei_LCD1602_I2C(uint8_t addr);
+
+  char begin();
 };
 
 #endif
