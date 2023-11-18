@@ -9,7 +9,7 @@
 
 class Bonezegei_LCD1602_I2C {
 public:
-
+  Bonezegei_LCD1602_I2C();
 };
 
 #endif
