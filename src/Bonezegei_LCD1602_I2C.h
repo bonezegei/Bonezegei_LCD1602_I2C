@@ -28,6 +28,7 @@ public:
 
   char begin();
 
+  Bonezegei_PCF8574 pcf8574;
   uint8_t _addr;
 };
 
