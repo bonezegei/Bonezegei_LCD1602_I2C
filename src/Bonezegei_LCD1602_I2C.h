@@ -28,6 +28,7 @@ public:
 
   char begin();
 
+  uint8_t _addr;
 };
 
 #endif
