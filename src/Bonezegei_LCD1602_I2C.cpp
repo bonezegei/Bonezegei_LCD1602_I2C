@@ -15,6 +15,11 @@ Bonezegei_LCD1602_I2C::Bonezegei_LCD1602_I2C(uint8_t addr){
 }
 
 char Bonezegei_LCD1602_I2C::begin(){
-
+  if ( pcf8574 ) {
+    return 1;
+  }
+  else {
+    return 0;
+  }
   
 }
