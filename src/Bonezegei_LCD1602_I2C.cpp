@@ -11,7 +11,7 @@ Bonezegei_LCD1602_I2C::Bonezegei_LCD1602_I2C(){
 }
 
 Bonezegei_LCD1602_I2C::Bonezegei_LCD1602_I2C(uint8_t addr){
-  
+  _addr = addr;
 }
 
 char Bonezegei_LCD1602_I2C::begin(){
