@@ -1,8 +1,7 @@
 /*
   This Library is written for HD44780 LCD with PCF8574 I2C IO expander
   Author: Bonezegei (Jofel Batutay)
-  Date:  November 2023
-
+  Date:  January 2024
   
   PCF8574    HD44780
        P0    RS
@@ -19,16 +18,16 @@
 #define _BONEZEGEI_LCD1602_I2C_H_
 
 #include <Arduino.h>
-#include <Bonezegei_PCF8574.h>
+#include <Wire.h>
 
-class Bonezegei_LCD1602_I2C {
+class Bonezegei_LCD1602_I2C{
 public:
   Bonezegei_LCD1602_I2C();
   Bonezegei_LCD1602_I2C(uint8_t addr);
 
   char begin();
+  void write(uint8_t data);
 
-  Bonezegei_PCF8574 pcf8574;
   uint8_t _addr;
 };
 
