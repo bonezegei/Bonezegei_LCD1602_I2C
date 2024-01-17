@@ -23,5 +23,5 @@ void loop() {
   String str = "ms:";
   str += millis();
   lcd.print(str.c_str());
-  delay(100);
+  delay(500);
 }
