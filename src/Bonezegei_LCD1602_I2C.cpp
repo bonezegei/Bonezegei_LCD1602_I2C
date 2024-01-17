@@ -22,4 +22,8 @@ char Bonezegei_LCD1602_I2C::begin() {
 }
 
 void Bonezegei_LCD1602_I2C::write(uint8_t data) {
+  Wire.beginTransmission(_addr);
+  p_write = data;
+  Wire.write(data);
+  Wire.endTransmission();
 }
