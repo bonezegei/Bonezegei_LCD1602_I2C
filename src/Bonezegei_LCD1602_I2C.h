@@ -29,6 +29,7 @@ public:
   void write(uint8_t data);
 
   uint8_t _addr;
+  uint8_t p_write;
 };
 
 #endif
