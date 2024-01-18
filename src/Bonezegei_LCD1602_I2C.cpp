@@ -97,6 +97,10 @@ void Bonezegei_LCD1602_I2C::print(const char *str) {
   }
 }
 
+void Bonezegei_LCD1602_I2C::clear(){
+   writeCommand(0x01);
+}
+
 void Bonezegei_LCD1602_I2C::setBacklight(uint8_t data) {
   p_write=0;
   if (data) {
