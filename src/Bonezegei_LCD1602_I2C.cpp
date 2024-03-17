@@ -14,7 +14,8 @@ Bonezegei_LCD1602_I2C::Bonezegei_LCD1602_I2C(uint8_t addr) {
 }
 
 char Bonezegei_LCD1602_I2C::begin() {
-  if (Wire.begin()) {
+  Wire.begin();
+  //if (Wire.begin()) {
     write(0x00);
     write4Bit(0x03);
     delayMicroseconds(4500);
@@ -36,10 +37,10 @@ char Bonezegei_LCD1602_I2C::begin() {
     write4Bit(0x00);
     write4Bit(0x0F);
     setBacklight(1);
+  //  return 1;
+  //} else {
     return 1;
-  } else {
-    return 0;
-  }
+  //}
 }
 
 void Bonezegei_LCD1602_I2C::write(uint8_t data) {
