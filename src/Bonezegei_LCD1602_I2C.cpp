@@ -98,6 +98,10 @@ void Bonezegei_LCD1602_I2C::print(const char *str) {
   }
 }
 
+void Bonezegei_LCD1602_I2C::print(char ch){
+  writeData(ch);
+}
+
 void Bonezegei_LCD1602_I2C::clear(){
    writeCommand(0x01);
 }
