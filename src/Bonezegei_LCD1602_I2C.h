@@ -41,6 +41,7 @@ public:
 
   void setPosition(uint8_t x, uint8_t y);
   void print(const char *str);
+  void print(char ch);
   void clear();
 
   void setBacklight(uint8_t data);
